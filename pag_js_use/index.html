@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Gastos e Ingresos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+  <section>
+    <div class="container">
+      <h1 class="anta-regular">Descripción</h1>
+      <p>
+        Ahora mismo presentamos una función para calcular sus gasto e ingresos.
+        puedes colocar cualquier cantidad como desee, como cuando e gastado en mis compras, y el resultado se mostrara
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h1 class="anta-regular">Control de Gastos e Ingresos</h1>
+
+      <div class="input-container">
+        <input type="text" id="descripcion" placeholder="Descripción (Ej. Compra, Sueldo)">
+        <input type="number" id="monto" placeholder="Monto">
+        <select id="tipo">
+          <option value="ingreso">Ingreso</option>
+          <option value="gasto">Gasto</option>
+        </select>
+        <button onclick="agregarTransaccion()">Agregar</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 class="anta-regular">Lista de Transacciones</h2>
+      <ul id="transacciones-lista"></ul>
+
+      <h3 class="anta-regular">Balance: <span id="balance">0</span></h3>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>By @GalletaDev</p>
+  </footer>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
